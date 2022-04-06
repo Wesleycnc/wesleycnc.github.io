@@ -7,7 +7,7 @@ Curso de programador Web.
 ### Front-End
 - HTML 
 - CSS 
-- JavaScripT
+- JS
 
 
 ### Back-End
