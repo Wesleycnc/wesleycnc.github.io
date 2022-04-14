@@ -47,6 +47,9 @@ header{
     /* Deixar o cabeçalho fixo */
     position: sticky;
     top: 0;
+
+  
+    z-index: 1000;
    
     
    
@@ -107,6 +110,8 @@ nav h2 a:focus,
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: white;
 
 }
 
