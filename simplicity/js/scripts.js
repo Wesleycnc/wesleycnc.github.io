@@ -48,3 +48,41 @@ botaoLocalizar.addEventListener("click", function(event){
  */
 VMasker(inputCep).maskPattern("99999-999");
 VMasker(inputTelefone).maskPattern("(99) 9999-9999");
+
+
+/* Programação do contador de caracteres
+do campo mensagem  */
+
+/* JS INICIAL PARA MENSAGEM */
+const spanMaximo = formulario.querySelector("#maximo");
+const bCaracteres = formulario.querySelector("#caracteres");
+const textMensagem = formulario.querySelector("#mensagem");
+
+// Determinar a quantidade máxima de caracteres
+let quantidade = 100;
+
+/* Evento para detectar a digitação (entrada) no campo */
+textMensagem.addEventListener("input",function() {
+    let conteudo = textMensagem.value;
+
+    //Criando uma contagem regressiva
+    let contagem = quantidade - conteudo.length;
+
+    //adicionando a contagem ao elemento HTML
+    bCaracteres.textContent = contagem;
+
+    
+  /*Se for 0, vermelho
+  Senão, preto  */
+  if (contagem == 0) {
+      bCaracteres.style.color = "red";
+      textMensagem.style.boxShadow = "red 0 0 10px";
+      
+      
+
+  } else {
+      bCaracteres.style.color = "black";
+      textMensagem.style.boxShadow = "black 0 0 10px";
+  }
+
+});
