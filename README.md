@@ -11,5 +11,5 @@ Curso de programador Web.
 
 
 ### Back-End
-PHP e MySQUL
+PHP e MySQL
 
